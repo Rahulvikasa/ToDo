@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="greeting">
+      What's Up,<input type="text" id="user-name" placeholder="NameHere" />
+    </div>
+    <section class="create-todo">
+      <h3>CREATE A TODO</h3>
+      <p>Whats On Your ToDo?</p>
+    </section>
+    <div id="input-todo-div">
+      <input type="text" id="todo-input-id" placeholder="for e.g Check Mails" />
+
+      <button id="add-button-id">Add ToDo</button>
+    </div>
+    <div class="todo-container">
+      <div class="status" id="status1">
+        <h1>No Status</h1>
+        <div class="todo" draggable="true" id="todo-id">Add Task Here</div>
+      </div>
+      <div class="status" id="status2">
+        <h1>Not Started</h1>
+      </div>
+      <div class="status" id="status3">
+        <h1>In Progress</h1>
+      </div>
+      <div class="status" id="status4">
+        <h1>Completed</h1>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

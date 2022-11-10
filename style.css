@@ -1,0 +1,134 @@
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  #input-todo-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .greeting {
+    font-size: 35px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+  }
+
+  #user-name {
+    font-size: 35px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+  }
+
+  .create-todo {
+    font-size: 21px;
+  }
+
+  .create-todo p {
+    color: grey;
+  }
+
+  #todo-input-id {
+    width: 99%;
+    font-size: 25px;
+    border: none;
+    background-color: lightgray;
+    border-radius: 50px;
+    padding-left: 20px;
+    background: linear-gradient(45deg, lightgray, lightgray);
+  }
+
+  #add-button-id{
+    font-size: larger;
+    font-weight: bolder;
+    background-color:rgb(133, 113, 207);
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 80%;
+    cursor: pointer;
+    transition: box-shadow .18s, transform .8s, opacity .5s;
+  }
+
+  #add-button-id:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.158);
+    transform: scale(1.09);
+  }
+
+  #add-button-id:active{
+    opacity: .7;
+  }
+  .todo-container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+  }
+  .status {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid grey;
+    background-color: rgba(211, 211, 211, 0);
+    position: relative;
+    border-radius: 20px ;
+  }
+
+  .status h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: 1px solid white;
+    background-color: rgba(128, 128, 128, 0.185);
+    margin: 0;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  #add-button-id {
+    justify-content: center;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+  }
+
+  .todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    background-color: rgb(172, 160, 160);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.274);
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.18s, box-shadow 0.18s;
+  }
+
+  .todo:hover {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.39);
+    transform: scale(1.04);
+  }
+
+  .todo .close-button {
+    font-size: 20px;
+    position: absolute;
+    right: 16px;
+    border: 1px solid;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 15px;
+    padding-bottom: 2px;
+    background-color:gray;
+    color: white;
+    cursor: pointer;
+    margin-top: -5px;
+  }
