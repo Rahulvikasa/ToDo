@@ -8,9 +8,6 @@ let create_delete_button = document.createElement('button');
 const todo_array = [];
 
 const status_1 = document.querySelector('#status1');
-//const status_2 = document.querySelector('.status2');
-//const status_3 = document.querySelector('.status3');
-//const status_4 = document.querySelector('.status4');
 
 console.log(todos);
 function buttonClicked()
@@ -75,32 +72,6 @@ function callWhenDragStarted(){
     console.log(draggableTodo);
 }
 
-//For DragOvers Seperate Elements
-/*
-status_1.addEventListener('dragover', callWhenDragOverStatus1);
-status_2.addEventListener('dragover', callWhenDragOverStatus2);
-status_3.addEventListener('dragover', callWhenDragOverStatus3);
-status_4.addEventListener('dragover', callWhenDragOverStatus4);
-
-// For DragOver function calling
-function callWhenDragOverStatus1(){
-    console.log('Drag Overed Status 1');
-}
-
-function callWhenDragOverStatus2(){
-    console.log('Drag Overed Status 2');
-}
-function callWhenDragOverStatus3(){
-    console.log('Drag Overed Status 3');
-}
-
-function callWhenDragOverStatus4(){
-    console.log('Drag Overed Status 4');
-}
-*/
-
-// For DragOver all Elements using forEach Iteration method
-
 all_status.forEach(function(statusElements){
     statusElements.addEventListener('dragover', callWhenDragOver);
     statusElements.addEventListener('dragenter', callWhenDragEnter);
@@ -110,7 +81,7 @@ all_status.forEach(function(statusElements){
 
 function callWhenDragOver(e){
     e.preventDefault();
-  //  console.log('Drag Over');
+ 
 }
 function callWhenDragEnter(){
     console.log('Drag Enter');
